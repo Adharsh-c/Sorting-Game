@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col items-center justify-center h-screen">
+    <div class="score" id="score">Score: 0</div>
+    <div class="congratulations" id="congratulations">Congratulations! Try the next sorting algorithm: Quick Sort</div>
+    <div class="message" id="message">Try to complete the sorting with fewer mistakes and faster time!</div>
+    <div class="bg-blue-200 p-4 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold mb-4">Bubble Sort</h1>
+        <div class="button-container">
+            <button class="button" onclick="randomArray()">Random Array</button>
+            <button class="button" onclick="shuffleArray()">Shuffle Array</button>
+            <button class="button" onclick="bubbleSort()">CHECK</button>
+        </div>
+        <div class="circle-container mb-4" id="circle-container">
+            <div class="circle" style="background-color: #333; width: 50px; height: 50px;">50</div>
+            <div class="circle" style="background-color: #666; width: 60px; height: 60px;">60</div>
+            <div class="circle" style="background-color: #999; width: 70px; height: 70px;">70</div>
+            <div class="circle" style="background-color: #ccc; width: 80px; height: 80px;">80</div>
+            <div class="circle" style="background-color: #000; width: 90px; height: 90px;">90</div>
+            <div class="circle" style="background-color: #444; width: 100px; height: 100px;">100</div>
+            <div class="circle" style="background-color: #888; width: 110px; height: 110px;">110</div>
+            <div class="circle" style="background-color: #bbb; width: 120px; height: 120px;">120</div>
+            <div class="circle" style="background-color: #eee; width: 130px; height: 130px;">130</div>
+            <div class="circle" style="background-color: #aaa; width: 140px; height: 140px;">140</div>
+        </div>
+        <div class="text-3xl font-bold text-blue-900 mb-4" id="sorting-time">Sorting Time: 00:00:000</div>
+        <div class="button-group">
+            <button class="button" onclick="restart()">Restart</button>
+            <button class="button" onclick="start()">Start</button>
+            <button class="button" onclick="goNext()">Next</button>
+        </div>
+        <div class="input-container">
+            <input type="number" id="value1" placeholder="Value 1">
+            <input type="number" id="value2" placeholder="Value 2">
+            <button class="button" onclick="swapCircles()">Swap</button>
+        </div>
+        <div id="feedback-message" class="mt-4 text-red-500"></div>
+    </div>
+    <div class="box-background">
+        <!-- content here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
